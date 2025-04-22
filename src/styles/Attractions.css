@@ -1,0 +1,79 @@
+.attractions-page {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+}
+
+.attraction-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.attraction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.attraction-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.attraction-content {
+  padding: 1.5rem;
+}
+
+.attraction-content h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.location {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #e9ecef;
+  color: #495057;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Search and Filter Styles */
+.form-control,
+.form-select {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .form-control,
+  .form-select {
+    margin-bottom: 0;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .attraction-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .attraction-image {
+    height: 180px;
+  }
+} 

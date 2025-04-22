@@ -1,0 +1,101 @@
+.hotels-page {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+}
+
+.hotel-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hotel-content {
+  padding: 1.5rem;
+}
+
+.hotel-content h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.location {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  color: #ffc107;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: 600;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.amenities {
+  margin: 1rem 0;
+}
+
+.amenities h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.amenities ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.amenities li {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Search and Filter Styles */
+.form-control,
+.form-select {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .form-control,
+  .form-select {
+    margin-bottom: 0;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .hotel-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .hotel-image {
+    height: 180px;
+  }
+} 
