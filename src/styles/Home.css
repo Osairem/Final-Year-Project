@@ -1,0 +1,343 @@
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('/images/mountain snow.jpeg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: -76px; /* Offset navbar height */
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content Wrapper */
+.home {
+  position: relative;
+  background: var(--background-dark);
+}
+
+/* Quick Facts Section */
+.quick-facts {
+  background-color: var(--background-light);
+  position: relative;
+  padding: 4rem 0;
+}
+
+.fact-card {
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.fact-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.fact-card p {
+  color: var(--text-primary);
+}
+
+/* Featured Destinations */
+.featured-destinations {
+  background: var(--background-darker);
+  position: relative;
+  padding: 4rem 0;
+}
+
+.destination-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  color: var(--text-primary);
+  backdrop-filter: blur(5px);
+}
+
+.card-content h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.card-content p {
+  color: var(--text-secondary);
+}
+
+.card-content .btn {
+  margin-top: 1rem;
+  background: var(--primary-color);
+  border: none;
+  color: white;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('/images/4.nathia gali.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text-primary);
+  text-align: center;
+  position: relative;
+  padding: 6rem 0;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background-darker);
+  opacity: 0.5;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-section p {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-section .btn {
+  position: relative;
+  z-index: 2;
+}
+
+/* Custom Slider Styles */
+.slider-section {
+  background: var(--background-light);
+  padding: 4rem 0;
+  position: relative;
+}
+
+.custom-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slider-container {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  color: var(--text-primary);
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.slide-content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slide-content p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+  backdrop-filter: blur(5px);
+}
+
+.slider-btn:hover {
+  background: var(--primary-color);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-btn.prev {
+  left: 20px;
+}
+
+.slider-btn.next {
+  right: 20px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--text-primary);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-title p {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .slider-container {
+    height: 300px;
+  }
+
+  .slide-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .slide-content p {
+    font-size: 1rem;
+  }
+
+  .slider-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .fact-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .destination-card img {
+    height: 200px;
+  }
+
+  .cta-section {
+    padding: 4rem 0;
+  }
+} 
